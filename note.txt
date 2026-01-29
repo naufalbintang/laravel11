@@ -1,0 +1,9 @@
+EPISODE 11 - Eloquent Relationship
+untuk generate posts sekalian dengan users (dengan relasi)
+ketik di php tinker:
+App\Models\Post::factory(100)->recycle(User::factory(5)->create())->create();
+
+EPISODE 12 - Post Category
+untuk generate posts sekalian dengan users dan category (dengan relasi)
+ketik di php tinker:
+App\Models\Post::factory(100)->recycle([Category::factory(3)->create(), User::factory(5)->create()])->create();
