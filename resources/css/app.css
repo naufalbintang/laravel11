@@ -4,7 +4,7 @@
 @source '../../storage/framework/views/*.php';
 @source '../**/*.blade.php';
 @source '../**/*.js';
-
-/* @theme {
-    --font-jetbrains: "JetBrains Mono", sans-serif;
-} */
+@import "flowbite/src/themes/default";
+@plugin "flowbite/plugin";
+@source "../../node_modules/flowbite";
+@plugin "flowbite-typography";
